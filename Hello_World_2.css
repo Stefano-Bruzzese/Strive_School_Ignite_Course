@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 60%);
+    font-family: 'Raleway', sans-serif;
+}
+#navMenù {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 1323px;
+    top: 10px;
+}
+.itemsNav {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+#firstCol {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    }
+.contacts {
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-size: 0.5h1;
+}
+#normPar {
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    width: 1323px;
+    margin-bottom: 5px;
+}
+#secondCol {
+        display: flex;
+        justify-content: space-evenly;
+        }
+.hardSkills {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    margin: 5px;
+    flex-grow: 1;
+}
+.softSkills {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    margin: 5px;
+    flex-grow: 1;
+    }
+.hobInt {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    margin: 5px;
+    flex-grow: 1;
+}
