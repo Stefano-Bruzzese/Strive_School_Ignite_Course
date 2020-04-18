@@ -1,0 +1,46 @@
+h1 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.navbar {
+    position: fixed;
+    top: 0px;
+    height: 60px; 
+    width: 100%;
+    z-index: 1;
+}
+#second {
+    margin-top: 70px;
+}
+
+.firstCol {
+    position: relative;
+
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.carousel-inner img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#photo {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: none;
+    top: 18%;
+    left: 30%;
+}
+
+:hover>#photo {
+    display: block;
+}
+
