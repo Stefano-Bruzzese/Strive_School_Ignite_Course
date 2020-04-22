@@ -96,7 +96,7 @@ function transform (number) {
   else if (number == 9)  {
     return 'nine';
   }else{
-    return 'none';
+    return 'choose a number from 0 to 9';
   }
 }
 
