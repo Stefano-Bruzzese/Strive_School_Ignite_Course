@@ -1,3 +1,5 @@
+console.log("i'm loading")
+
 function testMe() {
     let test1 = 5;
     let test2 = 6;
@@ -100,4 +102,61 @@ function transform (number) {
   }
 }
 
+function sum(a){
+  let sum = 0;
+  for(let i = 0; i < a.length; i++) {
+    if(Number(x[i]))
+      sum += x[i];
+  }
+  return sum;
+}
 
+function min (a){
+  let min = Number.MAX_VALUE
+
+  for(let i = 0; i < a.length; i++)
+    if (a[i] < min)
+
+  min = a[i]
+  for(let i = 1; i < a.length; i++)
+  if(a[i] < min)
+      min - a[i]
+
+  return min;
+}
+
+function arrayFi(obj) {
+    let result = []
+    for(let prop in obj) {
+      result.push({
+        name: prop,
+        value: onj[prop]
+    })
+  }
+
+    return result;
+}
+
+function objetcyFi (array) {
+  let result = {}
+  
+  for(let i = 0; i < array.length; i ++) {
+      result[array[i].name] = array[i].value
+  }
+
+    return result;
+}
+
+function revertArray (array) {
+    for (let i = 0; i < array.length / 2; i ++){
+        let temp = array[i]
+        array[i]= array [array.length-i -1]
+        array[array.length-i - 1] = temp
+    }
+}
+
+function swappy (array, pos1, pos2){
+  let temp = array[pos1]
+  array[pos1] = array[pos2]
+  array[pos2] = temp
+}
