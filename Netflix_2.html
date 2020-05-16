@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Homework - Bruzzese Stefano</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Netflix_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="Netflix.html"><img src="Photos/Netflix_Logo.png" alt="Netflix_Logo"></a>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Movies Gallery</h1>
+                <form id="movieForm" autocomplete="off">
+                    <div class="row">
+                        <div class="form-group">
+                            <input class="form-control" type="text" id="movie" placeholder="Search movie here...">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-danger btn-block">
+                                Search Movie
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="result"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        let apikey = "d30b2c77"
+
+        $("#movieForm").submit(function (event) {
+            event.preventDefault()
+
+            let movie = $("#movie").val()
+
+            let result = ""
+
+            let url = "http://www.omdbapi.com/?apikey=" + apikey
+
+            $.ajax({
+                method: 'GET',
+                url: url + "&t=" + movie,
+                success: function (data) {
+                    console.log(data)
+
+                    result = `
+
+                        <img style="float:left" class="img-thumbnail" width="200" height="200" src="${data.Poster}" />
+                        <h2 class="title">${data.Title}</h2>
+                        <h2>Released: ${data.Released}</h2>
+                        <h2>Runtime: ${data.Runtime}</h2>
+                        <h2 class="genre">Genre: ${data.Genre}</h2>
+                        <h2>Director: ${data.Director}</h2>
+                        <h2>Actors: ${data.Actors}</h2>
+                        `;
+                    $("#result").html(result);
+                }
+            })
+        })
+
+    })
+</script>
+
+</html>

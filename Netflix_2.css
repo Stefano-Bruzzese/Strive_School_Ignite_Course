@@ -1,0 +1,44 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: black;
+    color: gray;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    margin-right: 20px;
+}
+
+.jumbotron {
+    padding: 10px;
+}
+
+.row {
+    padding-left: 30px;
+   
+}
+
+.form-control {
+    width: 835px;
+}
+
+.btn {
+    width: 200px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 70px;
+}
